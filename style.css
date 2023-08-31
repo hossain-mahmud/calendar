@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+body{
+    height: 100%;
+    background-color: blueviolet;
+}
+.calendar{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap:7px;
+    padding: 20px;
+    background-color: #fff;
+    width: 400px;
+    height:420px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.day1{
+    grid-column: 7/-1;
+}
+.month{
+    grid-column: 1 /6;
+}
+.year{
+    grid-column:7/-1;
+}
+.month h1{
+    font-size: 22px;
+}
+.year h1{
+    font-size: 22px;
+}
+.day_name h1{
+    font-size: 20px;
+    color: purple; 
+}
+.day h1{
+    font-size: 24px;
+    text-align: center;
+}
+.mark h1{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: orangered;
+    color: #fff;
+    border-radius: 50%;
+}
